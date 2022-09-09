@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="login" template="/WEB-INF/jsp/login.jsp">
+        <put-attribute name="title" value="Dang nhap vao trang chu" />
+    </definition>
+    <definition name="register" template="/WEB-INF/jsp/register.jsp">
+        <put-attribute name="title" value="Dang ky nguoi dung" />
+    </definition>
+    <definition name="home" template="/WEB-INF/jsp/home.jsp">
+        <put-attribute name="title" value="Trang mo dau" />
+    </definition>
+    
+    
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/index.jsp" />
+    </definition>
+    
+    <definition name="addExpense" extends="baseLayout">
+        <put-attribute name="title" value="Them moi chi tieu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addExpense.jsp" />
+    </definition>
+    <definition name="updateExpense" extends="baseLayout">
+        <put-attribute name="title" value="Sua chi tieu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/editExpense.jsp" />
+    </definition>
+    <definition name="detailsExpense" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiet chi tieu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/detailsExpense.jsp" />
+    </definition>
+    <definition name="statsExpense" extends="baseLayout">
+        <put-attribute name="title" value="Thong ke bao cao chi" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/statsExpense.jsp" />
+    </definition>
+    <definition name="statsExpenseMonth" extends="baseLayout">
+        <put-attribute name="title" value="Thong ke bao cao chi theo thang" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/statsExpenseMonth.jsp" />
+    </definition>
+    
+    <definition name="listIncome" extends="baseLayout">
+        <put-attribute name="title" value="Danh sach thu nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/listIncome.jsp" />
+    </definition>
+    <definition name="addIncome" extends="baseLayout">
+        <put-attribute name="title" value="Them moi thu nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addIncome.jsp" />
+    </definition>
+    <definition name="updateIncome" extends="baseLayout">
+        <put-attribute name="title" value="Sua thu nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/editIncome.jsp" />
+    </definition>
+    <definition name="detailsIncome" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiet thu nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/detailsIncome.jsp" />
+    </definition>
+    <definition name="statsIncome" extends="baseLayout">
+        <put-attribute name="title" value="Thong ke bao cao thu nhap" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/statsIncome.jsp" />
+    </definition>
+    
+    
+    <definition name="listUserGroup" extends="baseLayout">
+        <put-attribute name="title" value="Them user vao nhom" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/listUserGroup.jsp" />
+    </definition>
+    <definition name="listTeam" extends="baseLayout">
+        <put-attribute name="title" value="Tham gia nhom" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/listTeam.jsp" />
+    </definition>
+    
+    <definition name="listMembers" extends="baseLayout">
+        <put-attribute name="title" value="Danh sach thanh vien" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/listMembers.jsp" />
+    </definition>
+    
+    <definition name="expenseTeamList" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách chi theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/expenseTeamList.jsp" />
+    </definition>
+    <definition name="addExpenseTeam" extends="baseLayout">
+        <put-attribute name="title" value="Thêm khoản chi cho nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addExpenseTeam.jsp" />
+    </definition>
+    <definition name="updateExpenseTeam" extends="baseLayout">
+        <put-attribute name="title" value="Sửa chi theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/editExpenseTeam.jsp" />
+    </definition>
+    <definition name="detailsExpenseTeam" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết chi theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/detailsExpenseTeam.jsp" />
+    </definition>
+    <definition name="statsExpenseTeam" extends="baseLayout">
+        <put-attribute name="title" value="Thong ke bao cao chi" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/statsExpenseTeam.jsp" />
+    </definition>
+    
+    <definition name="incomeTeamList" extends="baseLayout">
+        <put-attribute name="title" value="Danh sách thu theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/incomeTeamList.jsp" />
+    </definition>
+    <definition name="addIncomeTeam" extends="baseLayout">
+        <put-attribute name="title" value="Thêm khoản thu cho nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/addIncomeTeam.jsp" />
+    </definition>
+    <definition name="updateIncomeTeam" extends="baseLayout">
+        <put-attribute name="title" value="Sửa thu theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/editIncomeTeam.jsp" />
+    </definition>
+    <definition name="detailsIncomeTeam" extends="baseLayout">
+        <put-attribute name="title" value="Chi tiết thu theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/detailsIncomeTeam.jsp" />
+    </definition>
+    <definition name="statsIncomeTeam" extends="baseLayout">
+        <put-attribute name="title" value="Thống kê thu theo nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/statsIncomeTeam.jsp" />
+    </definition>
+    
+    <definition name="calendar" extends="baseLayout">
+        <put-attribute name="title" value="Lịch" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/calendar.jsp" />
+    </definition>
+    <definition name="chat" extends="baseLayout">
+        <put-attribute name="title" value="Chat nhóm" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/chat.jsp" />
+    </definition>
+    
+    <!-- Admin-->
+    <definition name="listUser" extends="baseLayout">
+        <put-attribute name="title" value="Quan ly nguoi dung" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/listUser.jsp" />
+    </definition>
+    <definition name="updateUser" extends="baseLayout">
+        <put-attribute name="title" value="Sua thong tin nguoi dung" />
+        <put-attribute name="content"
+                       value="/WEB-INF/jsp/editUser.jsp" />
+    </definition>
+    
+</tiles-definitions>
